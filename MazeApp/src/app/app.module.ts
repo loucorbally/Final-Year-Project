@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ContactComponent } from './contact/contact.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactComponent,
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule
