@@ -5,6 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatOptionModule, MatSelectModule} from '@angular/material';
+import {MatCardModule, MatGridListModule, MatListModule, } from '@angular/material';
+import { AppRoutingModule } from './app-routing.module';
+import {Router} from "@angular/router";
+
+
+
 
 
 @NgModule({
@@ -12,11 +20,31 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
     AppComponent,
     ContactComponent,
     LeaderboardComponent
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule, 
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatOptionModule,
+    MatSelectModule,
+    AppRoutingModule,
+    MatCardModule,
+    MatGridListModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+    // Diagnostic only: inspect router configuration
+    constructor(router: Router) {
+      // Use a custom replacer to display function names in the route configs
+      // const replacer = (key, value) => (typeof value === 'function') ? value.name : value;
+  
+      // console.log('Routes: ', JSON.stringify(router.config, replacer, 2));
+    }
+ }
+
