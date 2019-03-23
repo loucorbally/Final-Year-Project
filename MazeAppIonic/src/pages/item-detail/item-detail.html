@@ -1,0 +1,55 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ item.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
+  </div>
+  <!-- Question 1 -->
+  <ion-card>
+
+    <ion-card-header>
+      Card Header
+    </ion-card-header>
+  
+    <ion-card-content>
+      <!-- Add card content here! -->
+    </ion-card-content>
+  
+  </ion-card>
+<!-- Question 2 -->
+  <ion-card>
+
+    <ion-card-header>
+      Card Header
+    </ion-card-header>
+  
+    <ion-card-content>
+      <!-- Add card content here! -->
+    </ion-card-content>
+  
+  </ion-card>
+  
+<!-- Question 3 -->
+  <ion-card>
+
+    <ion-card-header>
+      Card Header
+    </ion-card-header>
+  
+    <ion-card-content>
+      <!-- Add card content here! -->
+    </ion-card-content>
+  
+  </ion-card>
+
+  <div class="item-detail" padding>
+    <h2>{{item.name}}</h2>
+    <p>{{item.about}}</p>
+  </div>
+</ion-content>

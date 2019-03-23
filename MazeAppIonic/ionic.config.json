@@ -1,0 +1,7 @@
+{
+  "name": "MazeApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
