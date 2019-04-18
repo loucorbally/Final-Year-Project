@@ -2,14 +2,28 @@
 
   <ion-navbar>
     <ion-title>{{ 'CARDS_TITLE' | translate }}</ion-title>
-  </ion-navbar>
+  
+  
+   
+    
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
 
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+
+</ion-navbar>
 </ion-header>
 
 
 <ion-content>
 
-  <ion-card *ngFor="let item of cardItems">
+   <ion-card *ngFor="let item of cardItems">
 
     <ion-item>
       <ion-avatar item-start>
@@ -19,30 +33,11 @@
       <p>{{item.date}}</p>
     </ion-item>
 
-    <img [src]="item.image">
+    <!-- <img [src]="item.image"> -->
 
     <ion-card-content>
       <p>{{item.content}}</p>
     </ion-card-content>
 
-    <ion-row>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='thumbs-up'></ion-icon>
-            12 Likes
-          </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='text'></ion-icon>
-            4 Comments
-          </button>
-      </ion-col>
-      <ion-col center text-center>
-        <ion-note>
-          11h ago
-        </ion-note>
-      </ion-col>
-    </ion-row>
+
   </ion-card>
-</ion-content>

@@ -7,7 +7,7 @@ export class Items {
   items: Item[] = [];
 
   defaultItem: any = {
-    "name": "Burt Bear",
+    "name": "Elf",
     "profilePic": "assets/img/speakers/bear.jpg",
     "about": "Burt is a Bear.",
   };
@@ -16,37 +16,37 @@ export class Items {
   constructor() {
     let items = [
       {
-        "name": "Burt Bear",
+        "name": "Elf",
         "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
+        "about": "Follows you"
       },
       {
-        "name": "Charlie Cheetah",
+        "name": "Santa",
         "profilePic": "assets/img/speakers/cheetah.jpg",
         "about": "Charlie is a Cheetah."
       },
       {
-        "name": "Donald Duck",
+        "name": "Seal",
         "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
+        "about": "...."
       },
       {
-        "name": "Eva Eagle",
+        "name": "Crab",
         "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "about": "Blocks your path"
       },
       {
-        "name": "Ellie Elephant",
+        "name": "",
         "profilePic": "assets/img/speakers/elephant.jpg",
         "about": "Ellie is an Elephant."
       },
       {
-        "name": "Molly Mouse",
+        "name": "",
         "profilePic": "assets/img/speakers/mouse.jpg",
         "about": "Molly is a Mouse."
       },
       {
-        "name": "Paul Puppy",
+        "name": "",
         "profilePic": "assets/img/speakers/puppy.jpg",
         "about": "Paul is a Puppy."
       }

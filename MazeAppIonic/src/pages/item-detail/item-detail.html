@@ -1,24 +1,42 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ item.name }}</ion-title>
+   
+    
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+  
+      <ion-title>
+        Friend of Foe?
+      </ion-title>
+
+      
+  
+      <ion-buttons end>
+        <button ion-button icon-only (click)="openModal()">
+          <ion-icon name="options"></ion-icon>
+        </button>
+      </ion-buttons>
+
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
-  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
-  </div>
+  
+      <p> Meet some of the caracters in our game. </p>
+  
   <!-- Question 1 -->
   <ion-card>
 
     <ion-card-header>
-      Card Header
+      <h1 ion-text color="secondary">Elf</h1>
     </ion-card-header>
   
     <ion-card-content>
-      <!-- Add card content here! -->
+        <img src="assets/img/elf.png" class="slide-image" />
     </ion-card-content>
   
   </ion-card>
@@ -26,11 +44,11 @@
   <ion-card>
 
     <ion-card-header>
-      Card Header
+      <h1 ion-text color="danger">Santa</h1>
     </ion-card-header>
   
     <ion-card-content>
-      <!-- Add card content here! -->
+        <img src="assets/img/crab.png" class="slide-image" />
     </ion-card-content>
   
   </ion-card>
@@ -39,17 +57,28 @@
   <ion-card>
 
     <ion-card-header>
-      Card Header
+      <h1 ion-text color="danger">Crab</h1>
+      <img src="assets/img/crab.png" class="slide-image" />
     </ion-card-header>
   
     <ion-card-content>
-      <!-- Add card content here! -->
+    
     </ion-card-content>
   
   </ion-card>
 
-  <div class="item-detail" padding>
-    <h2>{{item.name}}</h2>
-    <p>{{item.about}}</p>
-  </div>
+  <!-- Question 3 -->
+  <ion-card>
+
+    <ion-card-header>
+      <h1 ion-text color="secondary">Seal</h1>
+    </ion-card-header>
+  
+    <ion-card-content>
+     
+    </ion-card-content>
+  
+  </ion-card>
+
+  
 </ion-content>

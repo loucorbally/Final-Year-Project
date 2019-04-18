@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, MenuController, NavController, Platform } from 'ionic-angular';
-
 import { TranslateService } from '@ngx-translate/core';
 
 export interface Slide {
@@ -51,7 +50,7 @@ export class TutorialPage {
   }
 
   startApp() {
-    this.navCtrl.setRoot('WelcomePage', {}, {
+    this.navCtrl.setRoot('ItemDetailPage', {}, {
       animate: true,
       direction: 'forward'
     });
