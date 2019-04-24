@@ -1,0 +1,127 @@
+<ion-header>
+    <ion-navbar no-border-bottom>
+     
+        <button ion-button icon-only menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+    
+          <ion-buttons end>
+                <button ion-button icon-only (click)="openModal()">
+                  <ion-icon name="options"></ion-icon>
+                </button>
+              </ion-buttons>
+
+              <ion-title>
+                  Frequently Asked Questions
+                </ion-title>
+
+    </ion-navbar>
+          
+
+    <ion-toolbar no-border-top>
+      <ion-segment [(ngModel)]="level">
+        <ion-segment-button value="levelone">
+          Winter Level
+        </ion-segment-button>
+        <ion-segment-button value="leveltwo">
+          Summer Level
+        </ion-segment-button>
+        <ion-segment-button value="ducklings">
+          Farm Level
+        </ion-segment-button>
+        <ion-segment-button value="ducklings">
+          General Questions
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  
+  <ion-content>
+    <div [ngSwitch]="level">
+      <ion-list *ngSwitchCase="'levelone'">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-puppy-1.jpg">
+          </ion-thumbnail>
+          <h2><b>Does the elf follow always?</b></h2>
+          <p>Yes the elf will consistenly follow you around maze once you are in its sight.</p>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-puppy-2.jpg">
+          </ion-thumbnail>
+          <h2><b>How many coins do I have to collect?</b></h2>
+          <p>There are 5 coins in this level, the coin counter is on the top right hand side of the screen.</p>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-puppy-4.jpg">
+          </ion-thumbnail>
+          <h2>Zoey</h2>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-puppy-3.jpg">
+          </ion-thumbnail>
+          <h2>Otto</h2>
+        </ion-item>
+      </ion-list>
+  
+      <ion-list *ngSwitchCase="'leveltwo'">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-kitten-1.jpg">
+          </ion-thumbnail>
+          <h2>Luna</h2>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-kitten-3.jpg">
+          </ion-thumbnail>
+          <h2>Milo</h2>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-kitten-4.jpg">
+          </ion-thumbnail>
+          <h2>Bandit</h2>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-kitten-2.jpg">
+          </ion-thumbnail>
+          <h2>Nala</h2>
+        </ion-item>
+      </ion-list>
+  
+      <ion-list *ngSwitchCase="'ducklings'">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-duckling-1.jpg">
+          </ion-thumbnail>
+          <h2>Daffy</h2>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-duckling-2.jpg">
+          </ion-thumbnail>
+          <h2>Huey</h2>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-duckling-3.jpg">
+          </ion-thumbnail>
+          <h2>Dewey</h2>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/img/thumbnail-duckling-4.jpg">
+          </ion-thumbnail>
+          <h2>Louie</h2>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+

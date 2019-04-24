@@ -13,7 +13,7 @@ import { IonicApp, IonicErrorHandler, IonicModule,  } from 'ionic-angular';
 import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
-import { CardsPageModule } from '../pages/cards/cards.module';
+
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -43,7 +43,7 @@ export function provideSettings(storage: Storage) {
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule, CardsPageModule,
+    IonicModule, 
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

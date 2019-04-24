@@ -3,10 +3,10 @@ import { IonicPage, NavController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-cards',
-  templateUrl: 'cards.html'
+  selector: 'page-creators',
+  templateUrl: 'creators.html'
 })
-export class CardsPage {
+export class CreatorsPageModule {
   cardItems: any[];
 
   constructor(public navCtrl: NavController) {
