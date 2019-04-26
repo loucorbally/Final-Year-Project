@@ -1,10 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ 'CARDS_TITLE' | translate }}</ion-title>
-  
-  
-   
+    <ion-title>Creators - About & Review of the game</ion-title>
     
     <button ion-button icon-only menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -33,10 +30,11 @@
       <p>{{item.date}}</p>
     </ion-item>
 
-    <!-- <img [src]="item.image"> -->
+ 
 
     <ion-card-content>
       <p>{{item.content}}</p>
+      <p><b>Review:</b> <br>{{item.review}}</p>
     </ion-card-content>
 
 
