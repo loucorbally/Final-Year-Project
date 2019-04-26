@@ -1,8 +1,23 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>{{ pageTitle }}</ion-title>
-  </ion-navbar>
+  <ion-header>
+    <ion-navbar no-border-bottom>
+     
+        <button ion-button icon-only menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+    
+          <ion-buttons end>
+                <button ion-button icon-only (click)="openModal()">
+                  <ion-icon name="options"></ion-icon>
+                </button>
+              </ion-buttons>
+  
+              <ion-title>
+                  Friend or Foe?
+                </ion-title>
+  
+    </ion-navbar>
 
 </ion-header>
 

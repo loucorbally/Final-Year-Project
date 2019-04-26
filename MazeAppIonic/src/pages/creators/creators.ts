@@ -6,7 +6,7 @@ import { IonicPage, NavController } from 'ionic-angular';
   selector: 'page-creators',
   templateUrl: 'creators.html'
 })
-export class CreatorsPageModule {
+export class CreatorsPage {
   cardItems: any[];
 
   constructor(public navCtrl: NavController) {

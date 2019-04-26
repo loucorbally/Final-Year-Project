@@ -7,8 +7,17 @@ page-item-detail {
   }
 
   .item-detail {
-    width: 100%;
+    width: 300%;
     background: white;
     position: absolute;
+  }
+}
+.item ion-thumbnail {
+  min-width: 20rem;    
+  min-height: 20rem;
+  img {
+      
+      height: 25rem;
+      width: 25rem;
   }
 }

@@ -12,7 +12,7 @@
             </ion-buttons>
 
             <ion-title>
-                Friend or Foe?
+                Characters & Assets
               </ion-title>
 
   </ion-navbar>
@@ -26,7 +26,7 @@
       <ion-segment-button value="leveltwo">
         Summer Level
       </ion-segment-button>
-      <ion-segment-button value="ducklings">
+      <ion-segment-button value="levelthree">
         Farm Level
       </ion-segment-button>
     </ion-segment>
@@ -34,33 +34,35 @@
 </ion-header>
 
     <ion-content>
-      <div [ngSwitch]="level">
+      <div [ngSwitch]="this.level">
         <ion-list *ngSwitchCase="'levelone'">
           <ion-item>
             <ion-thumbnail item-start>
               <img src="assets/img/elf.png">
             </ion-thumbnail>
-            <h2><b>Does the elf follow always?</b></h2>
-            <p>Yes the elf will consistenly follow you around maze once you are in its sight.</p>
+            <h2><b>Elf</b></h2>
+            <p>Friend - he will follow you throughout the Maze</p>
           </ion-item>
           <ion-item>
             <ion-thumbnail item-start>
-              <img src="assets/img/thumbnail-puppy-2.jpg">
+              <img src="assets/img/snowman2.png">
             </ion-thumbnail>
-            <h2><b>How many coins do I have to collect?</b></h2>
-            <p>There are 5 coins in this level, the coin counter is on the top right hand side of the screen.</p>
+            <h2><b>Snowman</b></h2>
+            <p>Foe - Santa walks back & forth to block your path</p>
           </ion-item>
           <ion-item>
             <ion-thumbnail item-start>
-              <img src="assets/img/thumbnail-puppy-4.jpg">
+              <img src="assets/img/igloo.png">
             </ion-thumbnail>
-            <h2>Zoey</h2>
+            <h2><b>Fish</b></h2>
+            <p></p>
           </ion-item>
           <ion-item>
             <ion-thumbnail item-start>
-              <img src="assets/img/thumbnail-puppy-3.jpg">
+              <img src="assets/img/tree.png">
             </ion-thumbnail>
-            <h2>Otto</h2>
+            <h2><b>Christmas Tree</b></h2>
+            <p>Decoration to give the level more character.</p>
           </ion-item>
         </ion-list>
 
@@ -70,30 +72,54 @@
         <ion-list *ngSwitchCase="'leveltwo'">
           <ion-item>
             <ion-thumbnail item-start>
-              <img src="assets/img/crab.png">
+              <img src="assets/img/beach.png">
             </ion-thumbnail>
-            <h2>Crab</h2>
+            <h2>Beach</h2>
           </ion-item>
           <ion-item>
             <ion-thumbnail item-start>
-              <img src="assets/img/thumbnail-kitten-3.jpg">
+              <img src="assets/img/Seal.png">
             </ion-thumbnail>
-            <h2>Milo</h2>
+            <h2>Seal</h2>
           </ion-item>
           <ion-item>
             <ion-thumbnail item-start>
-              <img src="assets/img/thumbnail-kitten-4.jpg">
+              <img src="assets/img/Shark.png">
             </ion-thumbnail>
-            <h2>Bandit</h2>
+            <h2>Shark</h2>
           </ion-item>
           <ion-item>
-            <ion-thumbnail item-start>
-              <img src="assets/img/thumbnail-kitten-2.jpg">
-            </ion-thumbnail>
-            <h2>Nala</h2>
-          </ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/img/crab.png">
+              </ion-thumbnail>
+              <h2>Crab</h2>
+            </ion-item>
         </ion-list>
-    
+
+
+ <!-- Level 3 - Farm Theme -->
+
+  <ion-list *ngSwitchCase="'levelthree'">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/img/pig.png">
+              </ion-thumbnail>
+              <h2>Pig</h2>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/img/Sheep.png">
+              </ion-thumbnail>
+              <h2>Sheep</h2>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/img/chicken1.png">
+              </ion-thumbnail>
+              <h2>Chicken</h2>
+            </ion-item>
+          </ion-list>
+      
       </div>
     </ion-content>
   

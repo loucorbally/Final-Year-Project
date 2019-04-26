@@ -50,7 +50,7 @@ export class TutorialPage {
   }
 
   startApp() {
-    this.navCtrl.setRoot('ItemDetailPage', {}, {
+    this.navCtrl.setRoot('CharactersPage', {}, {
       animate: true,
       direction: 'forward'
     });

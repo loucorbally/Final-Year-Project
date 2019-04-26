@@ -6,14 +6,16 @@ import { Tab1Root, Tab2Root, Tab3Root } from '../';
 
 @IonicPage()
 @Component({
-  selector: 'page-item-detail',
-  templateUrl: 'item-detail.html'
+  selector: 'page-characters',
+  templateUrl: 'characters.html'
 })
-export class ItemDetailPage {
+export class CharactersPage {
   item: any;
+  level: any;
 
   constructor(public navCtrl: NavController, navParams: NavParams, items: Items) {
     this.item = navParams.get('item') || items.defaultItem;
+    this.level = "levelone";
   }
 
 }
