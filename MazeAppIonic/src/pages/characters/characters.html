@@ -1,18 +1,18 @@
 <ion-header>
   <ion-navbar no-border-bottom>
-   
-      <button ion-button icon-only menuToggle>
-          <ion-icon name="menu"></ion-icon>
-        </button>
-  
-        
 
-            <ion-title>
-                Characters & Assets
-              </ion-title>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+
+
+    <ion-title>
+      Characters & Assets
+    </ion-title>
 
   </ion-navbar>
-        
+
 
   <ion-toolbar no-border-top color="secondary-scheme">
     <ion-segment [(ngModel)]="level" color="dark">
@@ -29,128 +29,358 @@
   </ion-toolbar>
 </ion-header>
 
-    <ion-content>
-      <div [ngSwitch]="this.level">
-        <ion-list *ngSwitchCase="'levelone'">
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="assets/img/elf.png">
-            </ion-thumbnail>
-            <h2><b>Elf</b></h2>
-            <p>The first such character to be created was the elf. 
-              <br>
-              The model was simple and blocky as we believed that this would suit the aesthetic of the games levels and may be easier to animate. 
-              <br>
-               The arms and legs were animated so that alternate arms and legs would be moving forward and backwards on each key frame. 
-               <br>
-              The elf so that he would <b>follow the player</b> around the scene.
-              <br>
-              When a collide was added to the elf this further added to the difficulty level of the game 
-              as the elf will force the player as backtracking will force the player to have to navigate 
-              <br>
-              their way around an elf which is going to continue to follow them wherever they go in the maze.   </p>
-          </ion-item>
+<ion-content>
+  <div [ngSwitch]="this.level">
+    <ion-list *ngSwitchCase="'levelone'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/elf.png">
+        </ion-thumbnail>
+        <h2><b>Elf</b></h2>
+        <p>The first character to be created was the elf.
+          <br>
+          The model was simple and blocky as we believed that this would suit the aesthetic of the games levels and may
+          be easier to animate.
+          <br>
+          The arms and legs were animated so that alternate arms and legs would be moving forward and backwards on each
+          key frame.
+          <br>
+          The elf so that he would <b>follow the player</b> around the scene.
+          <br>
+          When a collide was added to the elf this further added to the difficulty level of the game
+          as the elf will force the player as backtracking will force the player to have to navigate
+          <br>
+          their way around an elf which is going to continue to follow them wherever they go in the maze. </p>
+      </ion-item>
 
-          <!--Beginning of new asset - Snowman -->
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="assets/img/snowman2.png">
-            </ion-thumbnail>
-            <h2><b>Snowman</b></h2>
-            <p>The very first animation which was created was for the snowman in the winter level. 
-              <br>
-              We planned to move the snowman as if he was patrolling a corridor. This would cause the user to have to move around the snowman. 
-              <br>
-
-            </p>
-          </ion-item>
-
-          <!--Beginning of new asset - Santa -->
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="assets/img/santa1.png">
-            </ion-thumbnail>
-            <h2><b>Santa</b></h2>
-            <p>The Santa Claus was the next character which was animated using the alternate limb animation system which we had established for animating humanoid characters. 
-              <br>
-               The Santa character model was much more complex than the elf. The hair, beard and hat were particularly difficult to create. 
-              <br> 
-               After watching multiple tutorial videos for creating cartoon-like hair in blender we attempted to create something which looked suitable for the model. 
-              <br>
-               Each strand of hair was crafted with grooves before being sized and rotated to fit together to form a complete hair and beard. 
-              <br>
-               The resulting hair and beard really stood out and completed the character’s model. We also researched how a ball for the end of the hat could be created. 
-              <br>
-            </p>
-          </ion-item>
-
-          <!--Beginning of new asset - Christmas Tree -->
-
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="assets/img/tree.png">
-            </ion-thumbnail>
-            <h2><b>Christmas Tree</b></h2>
-            <p>Decoration to give the level more character.</p>
-          </ion-item>
-        </ion-list>
+      <!--Beginning of new asset - Snowman -->
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/snowman2.png">
+        </ion-thumbnail>
+        <h2><b>Snowman</b></h2>
+        <p>
+          The very first animation which was created was for the snowman in the winter level.
+          <br>
+          This should have been one of the more straightforward animations due to the lack of arms or legs but the final
+          model for the snowman had
+          sticks for arms
+          <br>
+          which needed to be animated moving up and down as he moved.
+          <br>
+          We planned to move the snowman as if he was patrolling a corridor. This meant that we could loop the animation
+          when he had done a full loop of
+          the corridor.
+          <br>
+          The animation appears very straightforward in Unity, but we ran into some problems creating it
+          in blender.
+          <br>
+          The arms of the snowman were meant to move up and down along on of the axis is blender but as we
+          key framed the turning animation the axis were changing which made
+          <br>
+          it very difficult to measure the animation
+          of the arms for it to appear natural and consistent with the rest of the animation.
 
 
-<!-- Level 2 - Beach Theme -->
+        </p>
+      </ion-item>
 
-        <ion-list *ngSwitchCase="'leveltwo'">
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="assets/img/beach.png">
-            </ion-thumbnail>
-            <h2>Beach</h2>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="assets/img/Seal.png">
-            </ion-thumbnail>
-            <h2>Seal</h2>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-start>
-              <img src="assets/img/Shark.png">
-            </ion-thumbnail>
-            <h2>Shark</h2>
-          </ion-item>
-          <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/crab.png">
-              </ion-thumbnail>
-              <h2>Crab</h2>
-            </ion-item>
-        </ion-list>
+      <!--Beginning of new asset - Santa -->
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/santa1.png">
+        </ion-thumbnail>
+        <h2><b>Santa</b></h2>
+        <p>The Santa Claus was the next character which was animated using the alternate limb animation system which we
+          had established for animating humanoid characters.
+          <br>
+          The Santa character model was much more complex than the elf. The hair, beard and hat were particularly
+          difficult to create.
+          <br>
+          After watching multiple tutorial videos for creating cartoon-like hair in blender we attempted to create
+          something which looked suitable for the model.
+          <br>
+          Each strand of hair was crafted with grooves before being sized and rotated to fit together to form a complete
+          hair and beard.
+          <br>
+          The resulting hair and beard really stood out and completed the character’s model. We also researched how a
+          ball for the end of the hat could be created.
+          <br>
+        </p>
+      </ion-item>
+
+      <!--Beginning of new asset - Christmas Tree -->
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/tree.png">
+        </ion-thumbnail>
+        <h2><b>Fish</b></h2>
+        <p>The fish was very frustrating to create.
+          <br>
+          The model was created with the use of the mirror modifier as the shape of the fish was exactly symmetrical.
+          <br>
+          This meant that if we only needed to model half of the fish and the other half would be modelled as a mirror
+          image.
+          <br>
+          The animation process for the fish was unique as we wanted the fish to loop in a circle before leaping out of
+          <br>
+          the water ending the animation with the exact
+          orientation and position that it started.
+          <br>
+          The fish also required a second animation through the use of an armature bone.
+          <br>
+          The bone was placed so that it was running parallel to the fish centred on its y and z axes.
+          <br>
+          An animation was created so that the bone bended left and right repeatedly to mimic the action that the fish’s
+          body would make to propel itself through the water.
+          <br>
+          The animation was very realistic and was actually the most realistic animation that we created over the course
+          of the full project.</p>
+      </ion-item>
+    </ion-list>
 
 
- <!-- Level 3 - Farm Theme -->
+    <!-- Level 2 - Beach Theme -->
 
-  <ion-list *ngSwitchCase="'levelthree'">
-            <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/pig.png">
-              </ion-thumbnail>
-              <h2>Pig</h2>
-            </ion-item>
-            <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/Sheep.png">
-              </ion-thumbnail>
-              <h2>Sheep</h2>
-            </ion-item>
-            <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/chicken1.png">
-              </ion-thumbnail>
-              <h2>Chicken</h2>
-            </ion-item>
-          </ion-list>
-      
-      </div>
-    </ion-content>
-  
-   
-  
+    <ion-list *ngSwitchCase="'leveltwo'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/Seal.png">
+        </ion-thumbnail>
+        <h2><b>Walrus</b></h2>
+        <p>Many of the objects required smooth edges and a reduced polygon count (e.g. Beachball and Walrus).
+          <br>
+          To achieve this, we created edge loops to parts of the models and added subdivision surface modifiers.
+          <br>
+          The subdivision surface modifiers were very useful in allowing us to significantly reduce the polygon count on
+          the objects and lessen the workload on the renderer to help
+          <br>
+          reduce in-game lagging.
+        </p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/Shark.png">
+        </ion-thumbnail>
+        <h2><b>Shark</b></h2>
+        <p>The shark was very frustrating to create.
+          <br>
+          The model was created with the use of the mirror modifier as the shape of the fish was exactly symmetrical.
+          <br>
+          This meant that if we only needed to model half of the fish and the other half would be modelled as a mirror
+          image.
+          <br>
+          The animation process for the fish was unique as we wanted the fish to loop in a circle before leaping out of
+          <br>
+          the water ending the animation with the exact
+          orientation and position that it started.
+          <br>
+          The fish also required a second animation through the use of an armature bone.
+          <br>
+          The bone was placed so that it was running parallel to the fish centred on its y and z axes.
+          <br>
+          An animation was created so that the bone bended left and right repeatedly to mimic the action that the fish’s
+          body would make to propel itself through the water.
+          <br>
+          The animation was very realistic and was actually the most realistic animation that we created over the course
+          of the full project.</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/crab.png">
+        </ion-thumbnail>
+        <h2><b>Crab</b></h2>
+        <p>
+          The crab was created in blender with the animation process at the forefront of our thoughts when designing the
+          model.
+          <br>
+          The crab was given six legs so that key framing the walking animation would be created by moving the middle
+          leg alternatingly with the two outer legs.
+          <br>
+          When the middle left leg was down the front and back left legs were raised. The opposite movement was created
+          for the other side of the crab.
+          <br>
+          The arms were made long so that the movement would seem exaggerated. The decision to create different sized
+          eyes for the crab which sat on top of
+          <br>
+          different length antennae was made to make the crab look less symmetrical and add character to the model.
+          <br>
+          The final animation was incorrect when first imported into Unity.
+          <br> Some of the crab’s objects which were animated correctly in Blender were disconnected from the crab and
+          in different positions in Unity.
+          <br>
+          The animation needed to be completely restarted in Blender.
+
+        </p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/towels.png">
+        </ion-thumbnail>
+        <h2><b>Towels</b></h2>
+        <p>There were quite a few problems encountered when we tried creating objects such as the towels and cloth for
+          the deckchairs.
+          <br>
+          The process of animating the towel was very slow and involved converting the flat brick-like object into a
+          cloth.
+          <br>
+          A modifier was used to enable blender to identify the object as a cloth.
+          <br>
+          The cloth then needed to be edited in vertex mode so that vertices could be constrained by using weight paint.
+          <br>
+          Instead of creating an animation it instead created a simulation for how a cloth material would behave.
+          <br>
+          After altering sliders such as bounce and stiffness the simulation acted like n accurate representation of how
+          a towel would move.</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/crab.png">
+        </ion-thumbnail>
+        <h2><b>Boat</b></h2>
+        <p>By creating different controllers running the animations at different speeds we were able to desynchronise
+          the objects animations and make them appear more realistic.
+          <br>
+          This can be seen on the boats in the water in the summer level.
+          <br>
+          The boats all appear to be moving in the water in different directions depending on the movement of the waves,
+          however this is not the case.
+          <br>
+          The boats have the same animation applied to them, but the animations are running at different speeds as they
+          are controlled by separate animator controllers.
+          <br>
+          This animation technique was also utilised for the buoys that we created to float in water.
+        </p>
+      </ion-item>
+    </ion-list>
+
+
+    <!-- Level 3 - Farm Theme -->
+
+    <ion-list *ngSwitchCase="'levelthree'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/pig.png">
+        </ion-thumbnail>
+        <h2><b>Pig</b></h2>
+        <p>The pig was easier to animate but we did encounter a lot of problems with the ears.
+          <br>Like so many other
+          objects which we made normalising faces was the problem.
+          <br>
+          As the player approached the pig from the front the
+          ears would be completely see through as none of the inside faces of the pig’s ear would be rendered.<br>
+          To
+          counteract this, we tried the duplication method, but this failed so we tried to use other methods which would
+          cause the full geometry of the pig’s ear to be rendered.
+          <br>
+          We tried changing the normal of the ear to inside
+          facing normal but predictably this ensured that the outer face of the ear wasn’t rendered.
+          <br> We solved the
+          problem by duplicating small parts of the ear and reversing the normal so that the player can’t see through
+          the ear.
+          <br>
+          The duplicated parts needed to be scaled down so that the edges aren’t protruding through the
+          original faces.
+          <br>
+          The new faces did solve the problem but as the faces were scaled down it was impossible to
+          completely cover the other face without slightly intersecting the original faces. </p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/Sheep.png">
+        </ion-thumbnail>
+        <h2><b>Sheep</b></h2>
+        <p>The sheep was created in blender with a sphere object acting as the main component.
+          <br>We first viewed wool sheep-like textures that could be applied to the sphere but then decided we could
+          alter the composition of the
+          sphere itself to look more like a sheep.
+          <br>To make the sphere look fluffy we brought the sphere into edit mode and individually extruded each of the
+          faces of the sphere.
+          <br>This was an extremely arduous repetitive task as all of the faces couldn’t be extruded together or even in
+          groups as this would fail to leave the gaps between
+          the faces.
+          <br>
+          The finished model did have a fluffy look, but it wasn’t the exact effect that we had been hoping for.
+          <br>
+          The head was designed using a cube which had lots of edge loops added so that we could sculpt the shape of it
+          and add more faces before it was subdivided.
+          <br>
+          A mirror modifier was added so that the two ears and eyes of the sheep were evenly modelled.
+          <br>
+          The ears were pulled out down and back to try and replicate how the ears of the sheep would appear tight to
+          its head. </p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/chicken1.png">
+        </ion-thumbnail>
+        <h2><b>Chicken</b></h2>
+        <p>The chicken was created in blender after viewing several 3D models of chicken for inspiration.
+          <br>
+          We looked at a mobile game called crossy roads which also features a chicken, but the model is very blocky,
+          and this didn’t suit the style of our game.
+          <br>
+          We instead decided to keep the model very rounded so that it would fit the style being used for the rest of
+          the scene. The body of the chicken was difficult to shape correctly.
+          <br>
+          A cylinder was the original object used.
+          <br>
+          The cylinder was turned at a 45-degree angle before subdivision surface modifiers were used to create a
+          suitable shape.
+          <br>
+          A lot of the 3d models that we had viewed were designed so that the chickens head had spike like hairs
+          protruding from the top of their head and <br>
+          something similar below its beak, so we opted to do the same.
+          <br>
+          The feet were deliberately left very blocky because we felt that it did a much better job of representing how
+          a chicken’s talons would look.
+          <br>
+          Animating the chicken was a fun exercise which consisted of animating the legs forward alternatingly.
+          <br>
+          We also tried to add extra life to the animation by animating the wings of the chicken jutting in and out as
+          it walked and the head moving from side to side.
+          <br>
+          The resulting animation showed the chicken moving fully during its walk cycle rather than appearing to be
+          paralysed from the mid-section up which is so <br> often the case when animations are only created for the
+          legs.
+          <br>
+          The extra movement adds realism to the characters model and makes the animation more believable.
+        </p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/tractor.png">
+        </ion-thumbnail>
+
+        <h2><b>Tractor</b></h2>
+        <p>The tractor was a very difficult model to build as while the main components of the model appear to be simple
+          shapes the small details in the model was very arduous to complete.
+          <br>
+          To begin simple shapes such as cubes were
+          put in the appropriate positions to represent where the finished pieces would sit.
+          <br>
+          This proved more difficult than expected with scale and perspective being major issues in the modelling
+          process.
+          <br>
+          We tried to set the correct distance between the front tires and the back while allowing space for the frame
+          of the tractor.
+          <br>
+          Gauging this distance was difficult and it took a lot of editing of the model to make the scale of the tractor
+          look appropriate and not too long.
+          <br>
+          Once the frame was nearing completion extra edge loops were added to mark out where the windows and the frame
+          would separate.
+          <br>
+          The windows were all separated from the frame and joined together to make it easier to add a glass material to
+          the
+          windows when the tractor was in unity.
+          <br>The mudguards were also separated from the frame and joined together as
+          their own object.
+        </p>
+      </ion-item>
+    </ion-list>
+
+  </div>
+</ion-content>
