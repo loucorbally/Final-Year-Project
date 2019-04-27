@@ -10,7 +10,7 @@ import { Settings } from '../providers';
 @Component({
   template: `<ion-menu [content]="content">
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="primary-scheme">
         <ion-title>Pages</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -33,16 +33,14 @@ export class MyApp {
 
   pages: any[] = [
     { title: 'Welcome', component: 'TutorialPage' },
-    { title: 'Content', component: 'ContentPage' },
-    { title: 'Tabs', component: 'TabsPage' },
+    { title: 'Concept & Rules', component: 'ContentPage' },
     { title: 'Creators', component: 'CreatorsPage' },
     { title: 'Characters', component: 'CharactersPage' },
     { title: 'Controls', component: 'ControlsPage' },
-    { title: 'Login', component: 'LoginPage' },
-    { title: 'Signup', component: 'SignupPage' },
+    { title: 'Levels', component: 'LevelsPage'},
     { title: 'FAQ', component: 'FAQPage' },
-    { title: 'Settings', component: 'SettingsPage' },
-    { title: 'Search', component: 'SearchPage' }
+    
+
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

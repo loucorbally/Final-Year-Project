@@ -9,7 +9,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule,  } from 'ionic-angular';
 
-
+import { VideoPlayer } from '@ionic-native/video-player/ngx';
 import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
@@ -65,6 +65,7 @@ export function provideSettings(storage: Storage) {
     Camera,
     SplashScreen,
     StatusBar, 
+    VideoPlayer,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
     { provide: ErrorHandler, useClass: IonicErrorHandler }

@@ -23,11 +23,11 @@ export class CreatorsPage {
       },
       {
         user: {
-          avatar: 'assets/img/sarah-avatar.png.jpeg',
+          avatar: 'assets/img/evan.jpeg',
           name: 'Evan Coyne'
         },
         date: 'Creator',
-        image: 'assets/img/advance-card-tmntr.jpg',
+        image: 'assets/img/evan.jpeg',
         content: 'Evan is a fourth-year student at GMIT. He comes from Ballinlough, Co.Roscommon. He recently received a level 7 degree in Business computing and Digital Media.  ',
         review: "This project was without doubt the most stressful and frustrating module I have undertaken in my four years in college. It would be dishonest of me to say I enjoyed it or would do it all over again without hesitation" ,
         

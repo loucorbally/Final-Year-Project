@@ -1,42 +1,57 @@
 <ion-header>
   <ion-navbar no-border-bottom>
-   
-      <button ion-button icon-only menuToggle>
-          <ion-icon name="menu"></ion-icon>
-        </button>
-  
-        <ion-buttons end>
-              <button ion-button icon-only (click)="openModal()">
-                <ion-icon name="options"></ion-icon>
-              </button>
-            </ion-buttons>
 
-           
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" color=#7e57ff>{{ 'TUTORIAL_SKIP_BUTTON' | translate}}</button>
+    </ion-buttons>
 
   </ion-navbar>
 </ion-header>
 
 <ion-content no-bounce>
-   
-  <ion-slides pager="true" dir="{{dir}}" (ionSlideWillChange)="onSlideChangeStart($event)">
+
+  <ion-slides pager="false" dir="{{dir}}" (ionSlideWillChange)="onSlideChangeStart($event)">
     <ion-slide *ngFor="let slide of slides">
-        <ion-buttons end *ngIf="showSkip">
-            <button ion-button (click)="startApp()" color= #7e57ff >{{ 'TUTORIAL_SKIP_BUTTON' | translate}}</button>
-          </ion-buttons>
+
       <img [src]="slide.image" class="slide-image" />
       <h2 class="slide-title" [innerHTML]="slide.title"></h2>
       <p [innerHTML]="slide.description"></p>
+      <ion-buttons >
+          <button ion-button icon-only (click)="slideToPrev()" color="danger">
+            <ion-icon name="arrow-round-back"></ion-icon>
+          </button>
+          <button ion-button icon-only (click)="slideToNext()" color="secondary">
+              <ion-icon name="arrow-round-forward"></ion-icon>
+            </button>
+          
+        </ion-buttons>
     </ion-slide>
     <ion-slide>
       <img src="assets/img/maze.png" class="slide-image" />
       <h2 class="slide-title">{{ 'TUTORIAL_SLIDE4_TITLE' | translate }}</h2>
+      
       <button ion-button icon-end large clear (click)="startApp()">
-        {{ 'TUTORIAL_CONTINUE_BUTTON' | translate }}
+        {{ 'TUTORIAL_SKIP_BUTTON' | translate }}
         <ion-icon name="arrow-forward"></ion-icon>
       </button>
+      <ion-buttons >
+          <button  ion-button icon-only (click)="slideToPrev()" color="danger">
+            <ion-icon name="arrow-round-back"></ion-icon>
+          </button>
+          <button ion-button icon-only (click)="slideToNext()" color="secondary">
+              <ion-icon name="arrow-round-forward"></ion-icon>
+            </button>
+          
+        </ion-buttons>
+      
     </ion-slide>
   </ion-slides>
 
-  
+
 
 </ion-content>

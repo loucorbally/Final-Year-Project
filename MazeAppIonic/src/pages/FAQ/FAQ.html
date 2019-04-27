@@ -1,165 +1,155 @@
 <ion-header>
-    <ion-navbar no-border-bottom>
-     
-        <button ion-button icon-only menuToggle>
-            <ion-icon name="menu"></ion-icon>
-          </button>
-    
-          <ion-buttons end>
-                <button ion-button icon-only (click)="openModal()">
-                  <ion-icon name="options"></ion-icon>
-                </button>
-              </ion-buttons>
+  <ion-navbar no-border-bottom>
 
-              <ion-title>
-                  Frequently Asked Questions
-                </ion-title>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Frequently Asked Questions
+    </ion-title>
 
-    </ion-navbar>
-          
+  </ion-navbar>
 
-    <ion-toolbar no-border-top>
-      <ion-segment [(ngModel)]="level">
-        <ion-segment-button value="levelone">
-          Winter Level
-        </ion-segment-button>
-        <ion-segment-button value="leveltwo">
-          Summer Level
-        </ion-segment-button>
-        <ion-segment-button value="levelthree">
-          Farm Level
-        </ion-segment-button>
-        <ion-segment-button value="general">
-          General Questions
-        </ion-segment-button>
-      </ion-segment>
-    </ion-toolbar>
-  </ion-header>
 
-  
-  
-  <ion-content>
-    <div [ngSwitch]="level">
-      <ion-list *ngSwitchCase="'levelone'">
-        <ion-item>
-          <ion-thumbnail item-start>
-              <img src="assets/img/elf2.png">
-          </ion-thumbnail>
-          <h2><b>Does the elf follow always?</b></h2>
-          <p>Yes the elf will consistenly follow you around maze once you are in its sight.</p>
-        </ion-item>
-        <ion-item>
-          <ion-thumbnail item-start>
-              <img src="assets/img/coin.png">
-          </ion-thumbnail>
-          <h2><b>How many coins do I have to collect?</b></h2>
-          <p>There are 5 coins in this level, the coin counter is on the top right hand side of the screen.</p>
-        </ion-item>
-        <ion-item>
-          <ion-thumbnail item-start>
-              
-          </ion-thumbnail>
-          <h2><b>How long do I have to collect coins?</b></h2>
-          <p>The player has 60 seconds to navigate the maze & collect the coins.</p>
-        </ion-item>
-        <ion-item>
-          <ion-thumbnail item-start>
-          </ion-thumbnail>
-          <h2>Otto</h2>
-        </ion-item>
-      </ion-list>
-  
-      <ion-list *ngSwitchCase="'leveltwo'">
-        <ion-item>
-          <ion-thumbnail item-start>
-              <img src="assets/img/beach.png">
-          </ion-thumbnail>
-          <h2><b>Why is this a beach level?</b></h2>
-          <p>We decided that each level should have a unique theme which influences how the environment will be created and what assets are made for the scene. 
-           <br> Each level has a different theme. 
-          </p>
-        </ion-item>
-        <ion-item>
-          <ion-thumbnail item-start>
-              <img src="assets/img/crab 2.png">
-          </ion-thumbnail>
-          <h2><b>How many enemies are there?</b></h2>
-          <p>The number varies per level, this level the crab is considered an enemy.</p>
-        </ion-item>
-        <ion-item>
-          <ion-thumbnail item-start>
-              <img src="assets/img/heart.png">
-          </ion-thumbnail>
-          <h2><b>How many lives do i have? </b></h2>
-          <p>You only get one life per level. </p>
-        </ion-item>
-        <ion-item>
-          <ion-thumbnail item-start>
-          </ion-thumbnail>
-          <h2></h2>
-        </ion-item>
-      </ion-list>
-  
-      <ion-list *ngSwitchCase="'levelthree'">
-        <ion-item>
-          <ion-thumbnail item-start>
-              <img src="assets/img/pigs.png">
-          </ion-thumbnail>
-          <h2><b>Can I drive the tractor?</b></h2>
-          <p>Unfortunately not, the tractor is for display purposes only.</p>
-        </ion-item>
-        <ion-item>
-          <ion-thumbnail item-start>
-              <img src="assets/img/sheep.png">
-          </ion-thumbnail>
-          <h2>Huey</h2>
-        </ion-item>
-        <ion-item>
-          <ion-thumbnail item-start>
-              <img src="assets/img/chicken1.png">
-          </ion-thumbnail>
-          <h2>Dewey</h2>
-        </ion-item>
-        <ion-item>
-          <ion-thumbnail item-start>
-              <img src="assets/img/pig.png">
-          </ion-thumbnail>
-          <h2>Louie</h2>
-        </ion-item>
-      </ion-list>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="level">
+      <ion-segment-button value="levelone">
+        Winter Level
+      </ion-segment-button>
+      <ion-segment-button value="leveltwo">
+        Summer Level
+      </ion-segment-button>
+      <ion-segment-button value="levelthree">
+        Farm Level
+      </ion-segment-button>
+      <ion-segment-button value="general">
+        General Questions
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
 
-      <ion-list *ngSwitchCase="'general'">
-          <ion-item>
-            <ion-thumbnail item-start>
-                <img src="assets/img/overview.png">
-            </ion-thumbnail>
-            <h2>Is it difficult to get out of the maze?</h2>
-            <p>That's all part of the fun.</p>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-start>
-                <img src="assets/img/overviewbeach.png">
-            </ion-thumbnail>
-            <h2>What if I don’t make it out before the timer runs out?</h2>
-            <p>When the player has collected all of the coins or runs out of time in the timed levels they will be redirected back to the hedge maze hub level. </p>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-start>
-                <img src="assets/img/beach2.png">
-            </ion-thumbnail>
-            <h2>How many levels are there?</h2>
-            <p>There are three main levels, however to make the gaming experience more understandable and interesting from the player’s perspective
-              <br> we added a hub level which ties all of the levels together. 
-              <br>
-              The hub level is where the player begins the game</p>
-          </ion-item>
-          <ion-item>
-            <ion-thumbnail item-start>
-                <img src="assets/img/pig.png">
-            </ion-thumbnail>
-            <h2>Louie</h2>
-          </ion-item>
-        </ion-list>
-    </div>
-  </ion-content>
 
+
+<ion-content>
+  <div [ngSwitch]="level">
+    <ion-list *ngSwitchCase="'levelone'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/elf2.png">
+        </ion-thumbnail>
+        <h2><b>Does the elf follow always?</b></h2>
+        <p>Yes the elf will consistenly follow you around maze once you are in its sight.</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/coin.png">
+        </ion-thumbnail>
+        <h2><b>How many coins do I have to collect?</b></h2>
+        <p>There are 5 coins in this level, the coin counter is on the top right hand side of the screen.</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+
+        </ion-thumbnail>
+        <h2><b>How long do I have to collect coins?</b></h2>
+        <p>The player has 60 seconds to navigate the maze & collect the coins.</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+        </ion-thumbnail>
+        <h2>Otto</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'leveltwo'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/beach.png">
+        </ion-thumbnail>
+        <h2><b>Why is this a beach level?</b></h2>
+        <p>We decided that each level should have a unique theme which influences how the environment will be created
+          and what assets are made for the scene.
+          <br> Each level has a different theme.
+        </p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/crab 2.png">
+        </ion-thumbnail>
+        <h2><b>How many enemies are there?</b></h2>
+        <p>The number varies per level, this level the crab is considered an enemy.</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/heart.png">
+        </ion-thumbnail>
+        <h2><b>How many lives do i have? </b></h2>
+        <p>You only get one life per level. </p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+        </ion-thumbnail>
+        <h2></h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'levelthree'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/pigs.png">
+        </ion-thumbnail>
+        <h2><b>Can I drive the tractor?</b></h2>
+        <p>Unfortunately not, the tractor is for display purposes only.</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/sheep.png">
+        </ion-thumbnail>
+        <h2><b>Will the animals chase me?</b>></h2>
+        <p>No, the animals on the farm won't chase you. They like people!</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/chicken1.png">
+        </ion-thumbnail>
+        <h2></h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/pig.png">
+        </ion-thumbnail>
+        <h2>Louie</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'general'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/overview.png">
+        </ion-thumbnail>
+        <h2><b>Is it difficult to get out of the maze?</b></h2>
+        <p>Perhaps, but isn't that all part of the fun.</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/overviewbeach.png">
+        </ion-thumbnail>
+        <h2><b>What if I don’t make it out before the timer runs out?</b></h2>
+        <p>When the player has collected all of the coins or runs out of time in the timed levels they will be
+          redirected back to the hedge maze hub level. </p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/beach2.png">
+        </ion-thumbnail>
+        <h2><b>How many levels are there?</b></h2>
+        <p>There are three main levels, however to make the gaming experience more understandable and interesting from
+          the player’s perspective
+          <br> we added a hub level which ties all of the levels together.
+          <br>
+          The hub level is where the player begins the game</p>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

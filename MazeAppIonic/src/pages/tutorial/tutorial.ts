@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, MenuController, NavController, Platform } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
+import { Slides } from 'ionic-angular';
+
 
 export interface Slide {
   title: string;
@@ -14,6 +16,7 @@ export interface Slide {
   templateUrl: 'tutorial.html'
 })
 export class TutorialPage {
+  @ViewChild(Slides) allSlides: Slides;
   slides: Slide[];
   showSkip = true;
   dir: string = 'ltr';
@@ -44,13 +47,14 @@ export class TutorialPage {
             title: values.TUTORIAL_SLIDE3_TITLE,
             description: values.TUTORIAL_SLIDE3_DESCRIPTION,
             image: 'assets/img/ica-slidebox-img-3.png',
+            
           }
         ];
       });
   }
 
   startApp() {
-    this.navCtrl.setRoot('CharactersPage', {}, {
+    this.navCtrl.setRoot('LevelsPage', {}, {
       animate: true,
       direction: 'forward'
     });
@@ -68,6 +72,22 @@ export class TutorialPage {
   ionViewWillLeave() {
     // enable the root left menu when leaving the tutorial page
     this.menu.enable(true);
+  }
+
+  slideToNext() {
+    // If slide is not at end 
+    if (!this.allSlides.isEnd()) {
+      this.allSlides.slideNext();
+    }
+
+  }
+
+  slideToPrev() {
+    // If slide is not at beginning
+    if(!this.allSlides.isBeginning()){
+      this.allSlides.slidePrev();
+    }
+
   }
 
 }

@@ -5,11 +5,7 @@
           <ion-icon name="menu"></ion-icon>
         </button>
   
-        <ion-buttons end>
-              <button ion-button icon-only (click)="openModal()">
-                <ion-icon name="options"></ion-icon>
-              </button>
-            </ion-buttons>
+        
 
             <ion-title>
                 Characters & Assets
@@ -18,8 +14,8 @@
   </ion-navbar>
         
 
-  <ion-toolbar no-border-top>
-    <ion-segment [(ngModel)]="level">
+  <ion-toolbar no-border-top color="secondary-scheme">
+    <ion-segment [(ngModel)]="level" color="dark">
       <ion-segment-button value="levelone">
         Winter Level
       </ion-segment-button>
