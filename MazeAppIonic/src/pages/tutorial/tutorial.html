@@ -13,6 +13,7 @@
   </ion-navbar>
 </ion-header>
 
+<!-- First three slides Code-->
 <ion-content no-bounce>
 
   <ion-slides pager="false" dir="{{dir}}" (ionSlideWillChange)="onSlideChangeStart($event)">
@@ -21,6 +22,8 @@
       <img [src]="slide.image" class="slide-image" />
       <h2 class="slide-title" [innerHTML]="slide.title"></h2>
       <p [innerHTML]="slide.description"></p>
+
+      <!-- Slider Buttons to go forward & back -->
       <ion-buttons >
           <button ion-button icon-only (click)="slideToPrev()" color="danger">
             <ion-icon name="arrow-round-back"></ion-icon>
@@ -32,15 +35,20 @@
         </ion-buttons>
     </ion-slide>
 
+<!-- Fourth Slide Code -->
     <ion-slide>
       <br>
+      <!-- Implement YouTube video -->
       <iframe src="https://www.youtube.com/embed/BJyUbxAFtFs" frameborder="0" width="700" height="500"></iframe>
       <h2 class="slide-title">{{ 'TUTORIAL_SLIDE4_TITLE' | translate }}</h2>
       
-      <button ion-button icon-end large clear (click)="startApp()">
+      <!-- Button brings user to levels page-->
+      <button ion-button icon-end large clear (click)="startApp()" color="secondary-scheme">
         {{ 'TUTORIAL_SKIP_BUTTON' | translate }}
         <ion-icon name="arrow-forward"></ion-icon>
       </button>
+      
+       <!-- Slider Buttons to go forward & back -->
       <ion-buttons >
           <button  ion-button icon-only (click)="slideToPrev()" color="danger">
             <ion-icon name="arrow-round-back"></ion-icon>

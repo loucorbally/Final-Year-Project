@@ -1,6 +1,8 @@
 <ion-header>
   <ion-navbar no-border-bottom>
 
+
+    <!-- Side Menu Button-->
     <button ion-button icon-only menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -10,8 +12,9 @@
 
   </ion-navbar>
 
+  <!-- Toolbar -->
 
-  <ion-toolbar no-border-top color="secondary-scheme">
+  <ion-toolbar no-border-top color="primary-scheme">
     <ion-segment [(ngModel)]="level" color="dark">
       <ion-segment-button value="levelone">
         Winter Level
@@ -29,7 +32,8 @@
   </ion-toolbar>
 </ion-header>
 
-
+<!-- FAQ Section Begins-->
+<!-- Level One Code -->
 
 <ion-content>
   <div [ngSwitch]="level">
@@ -56,6 +60,8 @@
         <p>The player has 60 seconds to navigate the maze & collect the coins.</p>
       </ion-item>
     </ion-list>
+
+    <!-- Level Two Code -->
 
     <ion-list *ngSwitchCase="'leveltwo'">
       <ion-item color="creator-scheme">
@@ -84,6 +90,8 @@
       </ion-item>
     </ion-list>
 
+    <!-- Level Three Code -->
+
     <ion-list *ngSwitchCase="'levelthree'">
       <ion-item color="creator-scheme">
         <ion-thumbnail item-start>
@@ -106,6 +114,8 @@
         <h2></h2>
       </ion-item>
     </ion-list>
+
+    <!-- General FAQ Code -->
 
     <ion-list *ngSwitchCase="'general'">
       <ion-item color="">
