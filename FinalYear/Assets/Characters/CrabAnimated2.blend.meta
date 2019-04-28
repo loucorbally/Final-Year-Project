@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: dad1f78d607afcb4e9596330d0723424
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: back-left
+    100002: back-right
+    100004: Body
+    100006: Claw1
+    100008: Claw2
+    100010: //RootNode
+    100012: Cylinder_002
+    100014: Cylinder_003
+    100016: Eye-left
+    100018: Eye-right
+    100020: front-left
+    100022: front-right
+    100024: Mid-left
+    100026: mid-right
+    400000: back-left
+    400002: back-right
+    400004: Body
+    400006: Claw1
+    400008: Claw2
+    400010: //RootNode
+    400012: Cylinder_002
+    400014: Cylinder_003
+    400016: Eye-left
+    400018: Eye-right
+    400020: front-left
+    400022: front-right
+    400024: Mid-left
+    400026: mid-right
+    2100000: Material_006
+    2100002: Material
+    2100004: Material_003
+    2100006: Material_001
+    2100008: Material_002
+    2300000: back-left
+    2300002: back-right
+    2300004: Body
+    2300006: Claw1
+    2300008: Claw2
+    2300010: Cylinder_002
+    2300012: Cylinder_003
+    2300014: Eye-left
+    2300016: Eye-right
+    2300018: front-left
+    2300020: front-right
+    2300022: Mid-left
+    2300024: mid-right
+    3300000: back-left
+    3300002: back-right
+    3300004: Body
+    3300006: Claw1
+    3300008: Claw2
+    3300010: Cylinder_002
+    3300012: Cylinder_003
+    3300014: Eye-left
+    3300016: Eye-right
+    3300018: front-left
+    3300020: front-right
+    3300022: Mid-left
+    3300024: mid-right
+    4300000: Cylinder_003
+    4300002: Claw1
+    4300004: Cylinder_002
+    4300006: Claw2
+    4300008: back-right
+    4300010: mid-right
+    4300012: front-right
+    4300014: front-left
+    4300016: Mid-left
+    4300018: back-left
+    4300020: Body
+    4300022: Eye-left
+    4300024: Eye-right
+    7400000: CrabWalk2
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: CrabWalk2
+      takeName: Default Take
+      firstFrame: 2
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

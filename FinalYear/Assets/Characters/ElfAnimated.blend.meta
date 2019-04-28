@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: edd79fff1aa3c0e4fb2a0c10931ba778
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Body
+    100002: Cube
+    100004: Cube_001
+    100006: Cube_002
+    100008: Cube_003
+    100010: //RootNode
+    100012: Eye_Right_000
+    100014: Eye_Right_001
+    100016: Hat-Band
+    100018: Hat-end
+    100020: Hat-middle
+    100022: Head
+    100024: Icosphere
+    100026: Icosphere_001
+    100028: Icosphere_002
+    100030: Icosphere_003
+    100032: Icosphere_004
+    100034: Icosphere_005
+    100036: Left_Leg
+    100038: Neck
+    100040: Right_Leg
+    400000: Body
+    400002: Cube
+    400004: Cube_001
+    400006: Cube_002
+    400008: Cube_003
+    400010: //RootNode
+    400012: Eye_Right_000
+    400014: Eye_Right_001
+    400016: Hat-Band
+    400018: Hat-end
+    400020: Hat-middle
+    400022: Head
+    400024: Icosphere
+    400026: Icosphere_001
+    400028: Icosphere_002
+    400030: Icosphere_003
+    400032: Icosphere_004
+    400034: Icosphere_005
+    400036: Left_Leg
+    400038: Neck
+    400040: Right_Leg
+    2100000: BG_Eye
+    2100002: Green
+    2100004: Material
+    2100006: Red
+    2100008: Yellow
+    2300000: Body
+    2300002: Cube
+    2300004: Cube_001
+    2300006: Cube_002
+    2300008: Cube_003
+    2300010: Eye_Right_000
+    2300012: Eye_Right_001
+    2300014: Hat-Band
+    2300016: Hat-end
+    2300018: Hat-middle
+    2300020: Head
+    2300022: Icosphere
+    2300024: Icosphere_001
+    2300026: Icosphere_002
+    2300028: Icosphere_003
+    2300030: Icosphere_004
+    2300032: Icosphere_005
+    2300034: Left_Leg
+    2300036: Neck
+    2300038: Right_Leg
+    3300000: Body
+    3300002: Cube
+    3300004: Cube_001
+    3300006: Cube_002
+    3300008: Cube_003
+    3300010: Eye_Right_000
+    3300012: Eye_Right_001
+    3300014: Hat-Band
+    3300016: Hat-end
+    3300018: Hat-middle
+    3300020: Head
+    3300022: Icosphere
+    3300024: Icosphere_001
+    3300026: Icosphere_002
+    3300028: Icosphere_003
+    3300030: Icosphere_004
+    3300032: Icosphere_005
+    3300034: Left_Leg
+    3300036: Neck
+    3300038: Right_Leg
+    4300000: Eye_Right_000
+    4300002: Cube_001
+    4300004: Cube_003
+    4300006: Icosphere_005
+    4300008: Cube_002
+    4300010: Icosphere_004
+    4300012: Icosphere_003
+    4300014: Icosphere_002
+    4300016: Icosphere_001
+    4300018: Icosphere
+    4300020: Cube
+    4300022: Hat-Band
+    4300024: Hat-middle
+    4300026: Hat-end
+    4300028: Eye_Right_001
+    4300030: Head
+    4300032: Neck
+    4300034: Left_Leg
+    4300036: Right_Leg
+    4300038: Body
+    7400000: ElfWalk
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ElfWalk
+      takeName: Default Take
+      firstFrame: 30
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

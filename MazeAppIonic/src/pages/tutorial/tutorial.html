@@ -23,6 +23,10 @@
       <h2 class="slide-title" [innerHTML]="slide.title"></h2>
       <p [innerHTML]="slide.description"></p>
 
+      <ion-list *ngIf="slide.title.includes('Top Ranking')">
+        <ion-item *ngFor="let score of scores">{{score[0]}} got a score of {{score[1]}}</ion-item>
+        
+      </ion-list>  
       <!-- Slider Buttons to go forward & back -->
       <ion-buttons >
           <button ion-button icon-only (click)="slideToPrev()" color="danger">
@@ -47,7 +51,7 @@
         {{ 'TUTORIAL_SKIP_BUTTON' | translate }}
         <ion-icon name="arrow-forward"></ion-icon>
       </button>
-      
+
        <!-- Slider Buttons to go forward & back -->
       <ion-buttons >
           <button  ion-button icon-only (click)="slideToPrev()" color="danger">

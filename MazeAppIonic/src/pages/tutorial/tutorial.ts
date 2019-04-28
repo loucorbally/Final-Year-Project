@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, MenuController, NavController, Platform } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { Slides } from 'ionic-angular';
+import { HttpClient, HttpClientModule,  } from '@angular/common/http';
 
 
 export interface Slide {
@@ -20,8 +21,9 @@ export class TutorialPage {
   slides: Slide[];
   showSkip = true;
   dir: string = 'ltr';
+  scores: any;
 
-  constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public platform: Platform) {
+  constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public platform: Platform, public http: HttpClient) {
     this.dir = platform.dir();
     translate.get(["TUTORIAL_SLIDE1_TITLE",
       "TUTORIAL_SLIDE1_DESCRIPTION",
@@ -67,6 +69,8 @@ export class TutorialPage {
   ionViewDidEnter() {
     // the root left menu should be disabled on the tutorial page
     this.menu.enable(false);
+
+    this.getHighScores();
   }
 
   ionViewWillLeave() {
@@ -88,6 +92,16 @@ export class TutorialPage {
       this.allSlides.slidePrev();
     }
 
+  }
+  getHighScores(){
+    this.http.get('http://34.74.7.23:2025/leaderboard/').subscribe((res: string)=>{
+      console.log(res);
+      console.log(typeof res)
+
+      JSON.parse(res);
+      this.scores=JSON.parse(res);
+ 
+    });
   }
 
 }
